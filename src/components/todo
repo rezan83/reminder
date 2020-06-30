@@ -1,0 +1,14 @@
+<label for="appt-time">Choose an appointment time: </label>
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">
+<input id="appt-time" type="time" name="appt-time" value="10:30">
+
+let tdate = document.getElementById("start")
+let ttime = document.getElementById("appt-time")
+
+let dateTime = `${tdate.value} ${ttime.value}`
+console.log(dateTime)
+
+var now = moment().format("YYYY-MM-DD hh:mm");
+console.log(now)

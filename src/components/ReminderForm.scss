@@ -1,0 +1,39 @@
+#reminder-form {
+    background-color: lightblue;
+    width: 80vw;
+    height: 30vh;
+    margin: 1vw;
+    margin-bottom: 2vw;
+    padding: 1vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    box-shadow: 10px 10px 5px  gray;
+    &:hover{
+        box-shadow: 5px 5px 5px  black;
+    }
+    transition: 0.5s;
+    input{
+        height: 2vh;
+        width: 60%;
+    }
+    div{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        margin: .5vw;
+        padding: .5vw; 
+    }
+    button{
+        padding: 8px;
+        font-size: 2vw;
+        border-radius: 5px;
+        width: 10vw;
+        border: 0;
+        cursor: pointer;
+        background-color: #70a7ff;
+        &:nth-child(2){
+            background-color: #ff8570
+        }
+    }
+}

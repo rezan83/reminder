@@ -1,0 +1,36 @@
+#all-reminders {
+    list-style: none;
+    background-color: lightblue;
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1vw;
+    padding: 1vw;
+    box-shadow: 10px 10px 5px  gray;
+    
+    li{
+        display: flex;
+        justify-content: space-between;
+        margin: .5vw;
+        padding: .5vw; 
+        transition: 0.5s;
+        &:hover{
+            box-shadow: 5px 5px 5px  black;
+        }
+        &:nth-child(odd){
+            background-color: #70a7ff;
+        }
+        button{
+            padding: 8px;
+            font-size: 2vw;
+            border-radius: 5px;
+            width: 10vw;
+            border: 0;
+            cursor: pointer;
+            background-color: #ff8570
+        }
+    }
+    
+    
+}

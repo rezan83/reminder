@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { connect } from "react-redux";
+import ReminderForm from "./components/ReminderForm";
+import AllReminders from "./components/AllReminders";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = (props) => {
+
+    return (
+      <div>
+        <h1 id="logo"> Reminder App</h1>
+       
+        <div>
+          <ReminderForm/>
+        </div>
+        <div>
+          <AllReminders />
+        </div>
+      </div>
+    );
 }
 
-export default App;
+export default connect(null)(App);
